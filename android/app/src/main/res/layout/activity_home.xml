@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bank App"
+        android:textColor="#424343"
         android:textSize="@dimen/_18ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,11 +24,11 @@
 
     <Button
         android:id="@+id/btnAccount"
-        android:layout_width="@dimen/_50sdp"
+        android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_40sdp"
         android:backgroundTint="#01AF09"
         android:text="Account"
-        android:textSize="@dimen/_11ssp"
+        android:textSize="@dimen/_15ssp"
         android:textColor="@color/white"
         app:cornerRadius="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,12 +44,29 @@
         android:backgroundTint="#01AF09"
         android:text="Transactions"
         android:textColor="@color/white"
-        android:textSize="@dimen/_11ssp"
+        android:textSize="@dimen/_13ssp"
         app:cornerRadius="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAccount"
         app:layout_constraintVertical_bias="0.07999998" />
+
+    <ScrollView
+        android:layout_width="404dp"
+        android:layout_height="406dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTransactions"
+        app:layout_constraintVertical_bias="0.937">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
