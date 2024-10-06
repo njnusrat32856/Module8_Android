@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_26ssp"
+        android:layout_height="wrap_content"
         android:text="Transaction Section"
         android:textSize="24sp"
         android:textStyle="bold|italic"
@@ -23,8 +23,8 @@
 
     <Button
         android:id="@+id/btnDeposit"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/thumbnail_height"
         android:backgroundTint="#01AF09"
         android:text="Deposit"
         android:textColor="@color/white"
@@ -39,7 +39,7 @@
     <Button
         android:id="@+id/btnWithdraw"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="wrap_content"
         android:backgroundTint="#01AF09"
         android:text="Withdraw"
         android:textColor="@color/white"
@@ -54,7 +54,7 @@
     <Button
         android:id="@+id/btnFundTransfer"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="wrap_content"
         android:backgroundTint="#01AF09"
         android:text="Fund Transfer"
         android:textColor="@color/white"

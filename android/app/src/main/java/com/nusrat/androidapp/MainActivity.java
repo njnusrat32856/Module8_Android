@@ -3,7 +3,10 @@ package com.nusrat.androidapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +29,29 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        Animation zoomIn= AnimationUtils.loadAnimation(this,R.anim.zoom_in);
 
+        ImageView splash =findViewById(R.id.splash);
+        splash.setAnimation(zoomIn);
 
+        zoomIn.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+
+                Intent intent= new Intent(getApplicationContext(),Home.class);
+                startActivity(intent);
+                finish();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
     }
 }
