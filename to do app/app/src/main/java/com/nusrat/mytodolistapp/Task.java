@@ -12,8 +12,20 @@ public class Task {
         this.isCompleted = isCompleted;
     }
 
-    public int getId() { return id; }
-    public String getTask() { return task; }
-    public boolean isCompleted() { return isCompleted; }
-    public void setCompleted(boolean completed) { isCompleted = completed; }
+    public Task() {
+
+    }
+
+    public int getId() {
+        return id;
+    }
+    public String getTask() {
+        return task;
+    }
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+    public void setCompleted(boolean completed) {
+        isCompleted = completed;
+    }
 }
