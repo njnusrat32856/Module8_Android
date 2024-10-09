@@ -5,18 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE6E6"
+    android:background="#FFDEDE"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/splash"
-        android:layout_width="284dp"
-        android:layout_height="274dp"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_230sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/babycarelogo"
+        app:srcCompat="@drawable/babycarerm"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
