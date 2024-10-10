@@ -10,5 +10,5 @@ import retrofit2.http.GET;
 public interface NotificationApi {
 
     @GET("get_notices.php")
-    Call<List<NotificationModel>> getNotification();
+    Call<List<NotificationModel>> getNotifications();
 }

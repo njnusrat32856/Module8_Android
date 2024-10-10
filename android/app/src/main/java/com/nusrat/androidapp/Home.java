@@ -29,7 +29,7 @@ import retrofit2.Response;
 
 public class Home extends AppCompatActivity {
 
-    private ImageView notification;
+    private ImageView notification, lionsClubs;
 
 
     @Override
@@ -85,6 +85,18 @@ public class Home extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), Notification.class);
                 startActivity(intent);
+            }
+        });
+
+
+        lionsClubs=findViewById(R.id.lionsClubs);
+
+        lionsClubs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), LionsClubsDashboard.class);
+                startActivity(intent);
+
             }
         });
 
