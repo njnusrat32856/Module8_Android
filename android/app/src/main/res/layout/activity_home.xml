@@ -35,14 +35,14 @@
                         android:layout_margin="@dimen/_2sdp"
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
-                        android:src="@drawable/bank"
+                        android:src="@drawable/bank2"
                         />
 
                     <ImageView
                         android:layout_margin="@dimen/_2sdp"
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
-                        android:src="@drawable/bank"
+                        android:src="@drawable/bank2"
                         />
 
                 </LinearLayout>
