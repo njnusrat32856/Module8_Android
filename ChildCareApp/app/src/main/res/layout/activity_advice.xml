@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE7E7"
+    tools:context=".AdviceActivity">
+
+
+    <Button
+        android:id="@+id/addChildDetails"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Add Child Details"
+        app:cornerRadius="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btn_vd"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Vaccine Details"
+        app:cornerRadius="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addChildDetails"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/btn_health"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Health Care"
+        app:cornerRadius="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vd"
+        app:layout_constraintVertical_bias="0.15" />
+    <Button
+        android:id="@+id/btn_food"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Food Advice"
+        app:cornerRadius="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_health"
+        app:layout_constraintVertical_bias="0.20" />
+</androidx.constraintlayout.widget.ConstraintLayout>
