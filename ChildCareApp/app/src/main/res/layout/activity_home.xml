@@ -67,25 +67,25 @@
                 android:id="@+id/rbage01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0 months to 1 year" />
+                android:text="0 months to 6 months" />
 
             <RadioButton
                 android:id="@+id/rbage13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 year to 3 years" />
+                android:text="6 months to 1 years" />
 
             <RadioButton
                 android:id="@+id/rbage47"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 years to 7 years" />
+                android:text="1 years to 1.5 years" />
 
             <RadioButton
                 android:id="@+id/rbage810"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8 years to 10 years" />
+                android:text="1.5 years to 2 years" />
 
         </RadioGroup>
 
