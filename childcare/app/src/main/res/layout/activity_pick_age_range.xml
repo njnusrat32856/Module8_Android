@@ -12,30 +12,35 @@
     tools:context=".PickAgeRange">
 
     <!-- Title Section -->
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:paddingHorizontal="15dp"-->
+<!--        android:paddingVertical="5dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.060000002"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/beau_rivage"
         android:gravity="center"
-        android:paddingHorizontal="15dp"
-        android:paddingVertical="5dp"
+        android:text="Child Care"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/beau_rivage"
-            android:gravity="center"
-            android:text="Child Care"
-            android:textColor="@color/white"
-            android:textSize="80sp"
-            android:textStyle="bold|italic" />
+        app:layout_constraintVertical_bias="0.13" />
 
         <!--        <TextView-->
         <!--            android:layout_width="match_parent"-->
@@ -45,7 +50,7 @@
         <!--            android:textColor="@color/white"-->
         <!--            android:textSize="30sp"-->
         <!--            android:textStyle="normal" />-->
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -60,6 +65,7 @@
 <!--        app:layout_constraintTop_toTopOf="parent">-->
 
     <TextView
+        android:id="@+id/enterAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -72,8 +78,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.110000014" />
 <!--    </LinearLayout>-->
 
     <!-- Instruction Text -->
@@ -101,62 +107,94 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toBottomOf="parent">-->
 
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="200dp"
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnSubmit"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/button_radius_style_red"-->
+<!--        android:text="Submit"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingHorizontal="15dp"-->
+<!--            android:paddingVertical="10dp">-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/decrease"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/button_radius_red_rounded"
+        android:onClick="decreaseAge"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterAge"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/inputAge"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_70ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/decrease"
+        app:layout_constraintTop_toBottomOf="@+id/enterAge"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/increase"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/button_radius_red_rounded"
+        android:onClick="increaseAge"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputAge"
+        app:layout_constraintTop_toBottomOf="@+id/enterAge"
+        app:layout_constraintVertical_bias="0.22000003" />
+<!--        </LinearLayout>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
         android:background="@drawable/button_radius_style_red"
         android:text="Submit"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/_17ssp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingHorizontal="15dp"
-            android:paddingVertical="10dp">
-
-            <Button
-                android:id="@+id/decrease"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/button_radius_red_rounded"
-                android:onClick="decreaseAge"
-                android:text="-"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/inputAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="0"
-                android:textColor="@color/white"
-                android:textSize="70sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/increase"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/button_radius_red_rounded"
-                android:onClick="increaseAge"
-                android:text="+"
-                android:textSize="30sp" />
-        </LinearLayout>
-<!--    </LinearLayout>-->
+        app:layout_constraintTop_toBottomOf="@+id/inputAge"
+        app:layout_constraintVertical_bias="0.29000002" />
+    <!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -73,9 +73,9 @@ public class LoginPage extends AppCompatActivity {
                     if (cursor.getCount() > 0) {
                         cursor.moveToFirst();
                         User user = new User();
-                        user.setFullname(cursor.getString(cursor.getColumnIndex(DatabaseHelper.COL_2)));
-                        user.setEmail(cursor.getString(cursor.getColumnIndex(DatabaseHelper.COL_4)));
-                        user.setType(cursor.getString(cursor.getColumnIndex(DatabaseHelper.COL_3)));
+                        user.setFullname(cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COL_2)));
+                        user.setEmail(cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COL_4)));
+                        user.setType(cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COL_3)));
 
                         // Clear input fields after successful login
                         email.setText(null);
