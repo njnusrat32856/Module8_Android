@@ -5,6 +5,67 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mombaby"
+    android:orientation="vertical"
     tools:context=".Sleep">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03000002">
+
+        <TextView
+            android:id="@+id/textViewApp"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:gravity="center"
+            android:text="GOOD NIGHT AND SWEET DREAMS"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_30ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_radius_style_dark_grey"
+            android:onClick="playIT"
+            android:text="PLAY"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonStop"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_radius_style_dark_grey"
+            android:onClick="StopIT"
+            android:text="PAUSE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

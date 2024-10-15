@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
     tools:context=".Baby">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_one"
+        android:textAlignment="center"
+        android:text="@string/playing_important"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_35ssp" />
+
+    <View
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/_15sdp">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/TransparentBlack"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:text="@string/play_is_essential"
+
+
+        />
+
+  </LinearLayout>
+
+  </ScrollView>
