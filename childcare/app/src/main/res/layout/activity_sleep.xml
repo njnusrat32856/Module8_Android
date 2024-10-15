@@ -62,7 +62,7 @@
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_marginBottom="30dp"
             android:background="@drawable/button_radius_style_dark_grey"
-            android:onClick="StopIT"
+            android:onClick="stopIT"
             android:text="PAUSE"
             android:textColor="@color/white"
             android:textSize="@dimen/_25ssp" />

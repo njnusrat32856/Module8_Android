@@ -44,7 +44,7 @@ public class Sleep extends AppCompatActivity {
     }
 
     // Method to pause the music when invoked
-    public void StopIT(View view) {
+    public void stopIT(View view) {
         if (mySong != null && mySong.isPlaying()) {
             mySong.pause();
         }
