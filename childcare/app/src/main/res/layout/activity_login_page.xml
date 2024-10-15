@@ -115,17 +115,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/inputPassword1"
-        app:layout_constraintVertical_bias="0.26">
+        app:layout_constraintVertical_bias="0.19999999">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
-            android:layout_width="150dp"
-            android:layout_height="45dp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_45sdp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/button_radius_style_red"
             android:text="Login"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
             android:textStyle="bold" />
 
         <!-- Or Divider -->
@@ -147,7 +148,7 @@
                 android:gravity="center"
                 android:text="Or"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="@dimen/_13ssp" />
 
             <View
                 android:layout_width="100dp"
@@ -163,7 +164,7 @@
             android:gravity="center"
             android:text="Create An Account"
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="@dimen/_16ssp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

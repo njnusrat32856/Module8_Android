@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/agbalumo</item>
+        <item>@font/alkatra_medium</item>
+        <item>@font/ar_one_sans_medium</item>
         <item>@font/beau_rivage</item>
+        <item>@font/fredoka_one</item>
         <item>@font/montserrat</item>
+        <item>@font/poppins_light</item>
+        <item>@font/poppins_medium</item>
     </array>
 </resources>

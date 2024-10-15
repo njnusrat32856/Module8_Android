@@ -29,7 +29,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 COL_1 + " INTEGER PRIMARY KEY AUTOINCREMENT, " +  // Auto incrementing ID
                 COL_2 + " TEXT, " +  // Name
                 COL_3 + " TEXT NOT NULL, " +  // Type (e.g., parent, helper)
-                COL_4 + " TEXT UNIQUE, " +  // Gmail, must be unique
+                COL_4 + " TEXT NOT NULL, " +  // Gmail, must be unique
                 COL_5 + " TEXT NOT NULL);");  // Password field
 
     }

@@ -133,32 +133,33 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/parent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/black"
+                android:buttonTint="@android:color/white"
                 android:text="Parents"
                 android:textColor="@color/white" />
 
-            <RadioButton
+            <android.widget.RadioButton
                 android:id="@+id/helper"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/white"
+                android:buttonTint="@android:color/white"
                 android:text="Helper"
                 android:textColor="@color/white" />
         </RadioGroup>
     </LinearLayout>
 
-    <!-- Register Button -->
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRegister"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_45sdp"
         android:background="@drawable/button_radius_style_red"
         android:text="Register"
-        android:textSize="20sp"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/white"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -170,12 +171,13 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/btnRegister"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginVertical="10dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/member"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister">
 
         <View
             android:layout_width="100dp"
@@ -185,11 +187,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Or"
-            android:textSize="20sp"
-            android:textColor="@color/white"
+            android:layout_marginHorizontal="5dp"
             android:gravity="center"
-            android:layout_marginHorizontal="5dp" />
+            android:text="Or"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <View
             android:layout_width="100dp"
@@ -197,19 +199,20 @@
             android:background="@color/red" />
     </LinearLayout>
 
-    <!-- Already a member link -->
+
     <TextView
         android:id="@+id/member"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Already a member? Login"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@id/btnRegister"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintVertical_bias="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
