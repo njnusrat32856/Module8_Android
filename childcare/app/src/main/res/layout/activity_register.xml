@@ -16,7 +16,8 @@
         android:id="@+id/logo"
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_150sdp"
-        android:src="@drawable/secondlogo"
+        android:src="@drawable/main_image"
+        android:layout_marginTop="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <!-- Last Name Input -->
     <EditText
@@ -154,8 +155,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRegister"
-        android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_45sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="@drawable/button_radius_style_red"
         android:text="Register"
         android:textSize="@dimen/_16ssp"
