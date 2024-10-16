@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ChildCare"
         tools:targetApi="31">
         <activity
+            android:name=".Hiccups"
+            android:exported="false" />
+        <activity
+            android:name=".Constipation"
+            android:exported="false" />
+        <activity
+            android:name=".GasandAcidity"
+            android:exported="false" />
+        <activity
+            android:name=".StomachAche"
+            android:exported="false" />
+        <activity
+            android:name=".CommonCold"
+            android:exported="false" />
+        <activity
             android:name=".FeverActivity"
             android:exported="false" />
         <activity

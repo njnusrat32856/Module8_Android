@@ -67,8 +67,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/Health"
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_90sdp"
+                android:layout_width="@dimen/_88sdp"
+                android:layout_height="@dimen/_88sdp"
                 android:layout_margin="@dimen/_5sdp"
                 app:cardBackgroundColor="@color/backgroundCard"
                 app:cardCornerRadius="@dimen/_20sdp">
@@ -131,8 +131,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/diet"
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_90sdp"
+                android:layout_width="@dimen/_88sdp"
+                android:layout_height="@dimen/_88sdp"
                 android:layout_margin="@dimen/_5sdp"
                 app:cardBackgroundColor="@color/backgroundCard"
                 app:cardCornerRadius="@dimen/_20sdp">
@@ -175,8 +175,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/babyLytics"
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_90sdp"
+                android:layout_width="@dimen/_88sdp"
+                android:layout_height="@dimen/_88sdp"
                 android:layout_margin="@dimen/_5sdp"
                 app:cardBackgroundColor="@color/backgroundCard"
                 app:cardCornerRadius="20dp">
@@ -240,8 +240,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/devs"
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_90sdp"
+                android:layout_width="@dimen/_88sdp"
+                android:layout_height="@dimen/_88sdp"
                 android:layout_margin="@dimen/_5sdp"
                 app:cardBackgroundColor="@color/backgroundCard"
                 app:cardCornerRadius="@dimen/_20sdp">

@@ -7,15 +7,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    android:paddingVertical="10dp"
-    android:paddingHorizontal="15dp"
+    android:paddingVertical="@dimen/_10sdp"
+    android:paddingHorizontal="@dimen/_15sdp"
     tools:context=".Register">
 
     <!-- Logo -->
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
         android:src="@drawable/secondlogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,9 +28,9 @@
         android:id="@+id/inputFname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
         android:backgroundTint="@color/white"
         android:hint="First Name"
         android:maxLines="1"
@@ -41,16 +41,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <!-- Last Name Input -->
     <EditText
         android:id="@+id/inputLname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
         android:backgroundTint="@color/white"
         android:hint="Last Name"
         android:maxLines="1"
@@ -68,9 +68,9 @@
         android:id="@+id/inputEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
         android:backgroundTint="@color/white"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -89,9 +89,9 @@
         android:id="@+id/inputPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
         android:backgroundTint="@color/white"
         android:hint="Password"
         android:inputType="textPassword"
@@ -110,8 +110,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:layout_marginStart="14dp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_14sdp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,13 +125,13 @@
             android:layout_weight="1"
             android:text="Type"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="@dimen/_20ssp" />
 
         <RadioGroup
             android:id="@+id/inputUserType"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="2">
 
             <android.widget.RadioButton
                 android:id="@+id/parent"
@@ -180,22 +180,22 @@
         app:layout_constraintTop_toBottomOf="@id/btnRegister">
 
         <View
-            android:layout_width="100dp"
-            android:layout_height="2dp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_2sdp"
             android:background="@color/red" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
             android:gravity="center"
             android:text="Or"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="@dimen/_13ssp" />
 
         <View
-            android:layout_width="100dp"
-            android:layout_height="2dp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_2sdp"
             android:background="@color/red" />
     </LinearLayout>
 
@@ -204,11 +204,11 @@
         android:id="@+id/member"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:gravity="center"
         android:text="Already a member? Login"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="@dimen/_16ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

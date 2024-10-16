@@ -6,38 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appbackground"
-    tools:context=".FeverActivity">
+    tools:context=".Hiccups">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/textViewFever"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_100sdp"
-            android:fontFamily="@font/fredoka_one"
-            android:text="FEVER"
-            android:textColor="@color/red"
-            android:textSize="@dimen/_35ssp" />
 
         <TextView
-            android:layout_width="@dimen/_295sdp"
+            android:id="@+id/textViewApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_120sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="HICCUPS"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_35ssp"
+            />
+
+        <TextView
+            android:layout_width="@dimen/_300sdp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
             android:fontFamily="@font/poppins_medium"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_30sdp"
             android:textAllCaps="true"
             android:textColor="@color/TransparentBlack"
             android:textSize="@dimen/_16ssp"
             android:textStyle="bold"
-            android:text="@string/keep_him"
+            android:text="@string/hiccups_text"
             />
+
     </LinearLayout>
 
 </ScrollView>
