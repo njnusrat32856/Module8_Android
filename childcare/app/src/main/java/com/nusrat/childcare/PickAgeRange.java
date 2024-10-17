@@ -31,11 +31,11 @@ public class PickAgeRange extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize the button and text view components
+
         submission = findViewById(R.id.btnSubmit);
         age = findViewById(R.id.inputAge);
 
-        // Set up the submit button click listener
+
         submission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

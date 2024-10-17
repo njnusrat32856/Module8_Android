@@ -44,18 +44,18 @@ public class LoginPage extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize the database helper and get readable database
+
         openHelper = new DatabaseHelper(this);
         db = openHelper.getReadableDatabase();
 
-        // Initialize the UI components
+
         email = findViewById(R.id.inputEmail);
         password = findViewById(R.id.inputPassword);
         login = findViewById(R.id.btnLogin);
         notMember = findViewById(R.id.notMember);
         log = findViewById(R.id.log);
 
-        // Set click listener for login button
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,7 +88,7 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
-        // Set click listener for "Not a member?" TextView
+        // "Not a member?" TextView
         notMember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,7 +96,7 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
-        // Set click listener for log TextView (Additional functionality)
+        // log TextView (Additional functionality)
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -105,21 +105,21 @@ public class LoginPage extends AppCompatActivity {
         });
     }
 
-    // Method to navigate to the registration page if the user is not a member
+
     private void userNotMember() {
         Intent openRegister = new Intent(this, Register.class);
         startActivity(openRegister);
         this.finish();
     }
 
-    // Method to navigate to the next activity after successful login
+
     private void loginMember() {
         Intent openNextActivity = new Intent(this, PickAgeRange.class);
         startActivity(openNextActivity);
         this.finish();
     }
 
-    // Method for additional log functionality
+
     private void userLog() {
         Intent openLog = new Intent(this, PickAgeRange.class);
         startActivity(openLog);

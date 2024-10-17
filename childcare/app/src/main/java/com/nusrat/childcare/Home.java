@@ -26,7 +26,7 @@ public class Home extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize ImageView components for different sections
+
         a = findViewById(R.id.imgHealth);
         b = findViewById(R.id.imgVacc);
         c = findViewById(R.id.imgSleep);
@@ -34,7 +34,7 @@ public class Home extends AppCompatActivity {
         e = findViewById(R.id.imgGuide);
         f = findViewById(R.id.imgBaby);
 
-        // Set click listeners for each ImageView to open respective activities
+
         a.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openActivityHealthCare();
@@ -67,7 +67,7 @@ public class Home extends AppCompatActivity {
         });
     }
 
-    // Methods to open different activities
+    // open different activities
     public void openActivityHealthCare() {
         Intent intent = new Intent(this, HealthCare.class);
         startActivity(intent);
@@ -94,7 +94,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void openActivityBaby() {
-        Intent intent = new Intent(this, Baby.class);
+        Intent intent = new Intent(this, BabyGame.class);
         startActivity(intent);
     }
 }

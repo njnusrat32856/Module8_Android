@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize the "Start" button
+
         start = findViewById(R.id.btnStart);
 
-        // Set an onClick listener to navigate to the Login screen
+
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Method to open the Login activity
+
     private void openLogin() {
         Intent intent = new Intent(MainActivity.this, LoginPage.class);
         startActivity(intent);
-        finish(); // Close the current activity
+        finish();
     }
 
 }

@@ -35,7 +35,7 @@ public class HealthCare extends AppCompatActivity {
         c = findViewById(R.id.btnc);
         h = findViewById(R.id.btnh);
 
-        // Set up click listeners for each button
+
         fv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

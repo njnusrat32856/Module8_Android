@@ -46,10 +46,10 @@ public class Register extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize DatabaseHelper
+        // initialize DatabaseHelper
         openHelper = new DatabaseHelper(this);
 
-        // Bind XML elements to Java objects
+
         firstname = findViewById(R.id.inputFname);
         lastname = findViewById(R.id.inputLname);
         email = findViewById(R.id.inputEmail);
@@ -58,29 +58,29 @@ public class Register extends AppCompatActivity {
 
         register = findViewById(R.id.btnRegister);
 
-        // Set OnClickListener for the register button
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                db = openHelper.getWritableDatabase();  // Open writable database
+                db = openHelper.getWritableDatabase();
                 User userModel = new User();
 
-                // Capture user input
+                // user input
                 userModel.setFirstname(firstname.getText().toString());
                 userModel.setLastname(lastname.getText().toString());
                 userModel.setFullname(userModel.getFirstname() + " " + userModel.getLastname());
                 userModel.setPassword(password.getText().toString());
                 userModel.setEmail(email.getText().toString());
 
-                // Determine user type based on radio button selection
+
                 if (type.getCheckedRadioButtonId() == R.id.parent) {
                     userModel.setType("Parents");
                 } else if (type.getCheckedRadioButtonId() == R.id.helper) {
                     userModel.setType("Helper");
                 }
 
-                // Validate user input
+
                 if (userModel.isEmpty()) {
                     Toast.makeText(Register.this, "Fill in all the fields", Toast.LENGTH_SHORT).show();
                     firstname.setError("First name is required");
@@ -92,9 +92,9 @@ public class Register extends AppCompatActivity {
                     Toast.makeText(Register.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                     email.setError("Enter a valid email");
 
-                } else if (userModel.getPassword().length() < 8) {
+                } else if (userModel.getPassword().length() < 4) {
                     Toast.makeText(Register.this, "Registration Failed", Toast.LENGTH_SHORT).show();
-                    password.setError("Password must contain at least 8 characters");
+                    password.setError("Password must contain at least 4 characters");
 
                 } else {
                     // Insert data if validation passes
@@ -105,7 +105,7 @@ public class Register extends AppCompatActivity {
                         password.setText(null);
                         email.setText(null);
                         Toast.makeText(Register.this, "You have been registered successfully", Toast.LENGTH_SHORT).show();
-                        userMember();  // Redirect to login
+                        userMember();
 
                     } else {
                         Toast.makeText(Register.this, "Registration failed", Toast.LENGTH_SHORT).show();

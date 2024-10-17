@@ -79,7 +79,7 @@ public class User {
         this.type = type;
     }
 
-    // Method to check if any field is empty
+
     public boolean isEmpty() {
         return this.firstname.isEmpty() ||
                 this.lastname.isEmpty() ||
